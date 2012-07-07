@@ -58,8 +58,10 @@ class Module_pages extends CI_Controller {
 
 		$html = '<option> </option>';
 
-		foreach($mod_list_arr['list'] as $mod_code){
-			$html .= '<option>'.$mod_code.'</option>';
+		for($i=0; $i<count($mod_list_arr['code_list']); $i++){
+			$html .= '<option value="'.$mod_list_arr['code_list'][$i].'">'
+			.$mod_list_arr['code_list'][$i].' - '.$mod_list_arr['title_list'][$i].
+			'</option>';
 		}
 
 		return $html;
@@ -83,16 +85,19 @@ class Module_pages extends CI_Controller {
 		
 		$arr = array();
 		$json_arr = array();
-		$all_modules_arr = array();
+		$all_module_codes_arr = array();
+		$all_module_title_arr = array();
 		for($i=0; $i<count($match_arr[0]); $i++){
 			$arr = $this->get_module_array($match_arr[0][$i]);
 			$json_arr[] = $arr;
-			array_push($all_modules_arr, $arr['module_code']);
+			array_push($all_module_codes_arr, $arr['module_code']);
+			array_push($all_module_title_arr, $arr['module_title']);
 			$this->module_cache_model->write_to_cache($arr);
 		}
 		
 		$all_modules_doc['_id'] = "all_modules_list";
-		$all_modules_doc['list'] = $all_modules_arr;
+		$all_modules_doc['code_list'] = $all_module_codes_arr;
+		$all_modules_doc['title_list'] = $all_module_title_arr;
 		$this->module_cache_model->write_to_cache($all_modules_doc);
 
 		//$this->output->set_content_type('application/json')
