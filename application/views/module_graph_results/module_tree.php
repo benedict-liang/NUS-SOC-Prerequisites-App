@@ -1,8 +1,10 @@
 <div class="row">
-	<div id="module_information" class="span4">
-		<?php echo $module_info_content ?>
+	<?php echo $module_title ?>
+
+	<div id="graph_canvas" class="span12">
 	</div>
 
-	<div id="graph_canvas" class="span7">
+	<div id="module_information" class="span12">
+		<?php echo $module_info_content ?>
 	</div>
 </div>

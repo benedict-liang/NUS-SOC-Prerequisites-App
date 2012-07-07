@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var width = $('#graph_canvas').width();
-    var height = $(window).height() * (90 / 100);
+    var height = $(window).height() * (80 / 100);
     var g = new Graph();
     var linecolors = ["#000000", "#999999", "#990000"]
     g.edgeFactory.template.style.directed = true;

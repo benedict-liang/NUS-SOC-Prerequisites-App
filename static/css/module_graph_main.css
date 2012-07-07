@@ -94,13 +94,17 @@
 	font-size: 25px;
 }
 
+.mod_title{
+	margin-bottom: 1em;
+}
+
 .mod_title h1{
 	font-size: 20px;
 	text-align: center;
 }
 
 .mod_info{
-	margin: 1em 0;
+	margin: 1em 1.5em;
 }
 
 .mod_info h2{
@@ -114,4 +118,5 @@
 #graph_canvas{
 	border-radius: 10px;
 	border: solid 0.5em #000;
+	margin-bottom: 1.5em
 }

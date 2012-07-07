@@ -8,7 +8,10 @@ class Modules extends CI_Controller {
 			$module_code = $_GET['module_code'];
 		}
 
-		$data['module_info_content'] = $this->build_module_info($module_code);
+		$info_arr = $this->build_module_info($module_code);
+
+		$data['module_title'] = $info_arr[0];
+		$data['module_info_content'] = $info_arr[1];
 	
 		$subview['page_content'] = $this->load->view('module_graph_results/module_tree', $data, true);
 
@@ -41,12 +44,12 @@ class Modules extends CI_Controller {
 			);
 
 		//Module Information Title
-		$html = '<div class="mod_title">';
-		$html .= '<h1>'.$mod['module_code'].' - '.$mod['module_title'].'</h1>';
-		$html .= '</div>';
+		$html_title = '<div class="mod_title">';
+		$html_title .= '<h1>'.$mod['module_code'].' - '.$mod['module_title'].'</h1>';
+		$html_title .= '</div>';
 		
 		//Rest of Module Information
-		$html .= '<div class="mod_info">';
+		$html = '<div class="mod_info">';
 
 		for($i=0; $i<count($arr_keys); $i++){
 			$html .= '<h2>'.$key_title[$i].'</h2>';
@@ -55,7 +58,9 @@ class Modules extends CI_Controller {
 
 		$html .= '</div>';
 
-		return $html;
+		$html_arr = array($html_title, $html);
+
+		return $html_arr;
 	}
 
 
