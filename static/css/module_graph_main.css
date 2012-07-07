@@ -94,6 +94,15 @@
 	font-size: 25px;
 }
 
+.guide_title h3{
+	font-size: 17px;
+	line-height: 17px;
+}
+
+.guide_title h4{
+	font-size: 13px;
+}
+
 .mod_title{
 	margin-bottom: 1em;
 }
