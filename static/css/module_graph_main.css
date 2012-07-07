@@ -1,0 +1,117 @@
+/*
+*	MAIN CSS FILE FOR WEBPAGE
+* 	Will be loaded on all pages
+*/
+
+/* Styles for header */
+.header_title{
+	font-family: 'Fredoka One', cursive;
+	text-align: center;
+	margin: 2em 0;
+}
+
+.header_title h2{
+	font-size: 15px;
+}
+
+.header_strip{
+	background-color: #000;
+	height: 30px;
+}
+
+/* Styles for footer */
+#footer{
+	height: 100px;
+	background-color: #000;
+	padding: 20px;
+}
+
+.footer_title{
+	color: #fff;
+	font-family: 'Fredoka One', cursive;
+	font-size: 30px;
+	margin-bottom: 0.5em;
+}
+
+/* addthis buttons */
+.addthis_facebook, .addthis_linkedin, .addthis_email{
+	background: url('../img/widget006_32x32_top.png');
+	overflow: hidden;
+	height: 32px;
+	width: 32px;
+	display: inline-block;
+}
+
+.addthis_facebook{
+	background-position: 0 -160px;
+}
+
+.addthis_linkedin{
+	background-position: 0 -320px;
+}
+
+.addthis_email{
+	background-position: 0 -128px;
+}
+
+/* Styles for modules selection */
+.modules_selection_title{
+	font-family: 'The Girl Next Door', cursive;
+	text-align: center;
+	margin: 1em 0;
+}
+
+.modules_selection_title h1{
+	font-size: 25px;
+}
+
+.modules_selection_controls{
+	margin: 1em 0;
+}
+
+.mod_select_submit{
+	font-size: 20px;
+	padding: 1em 1em;
+}
+
+#select_mods{
+	width: 50%;
+}
+
+/* Styles for module_tree.php */
+.guide_title{
+	text-align: center;
+	margin-bottom: 2em;
+	background-color: #000;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	border-radius: 2em;
+	color: #fff;
+}
+
+.guide_title h1{
+	font-family: 'The Girl Next Door', cursive;
+	font-size: 25px;
+}
+
+.mod_title h1{
+	font-size: 20px;
+	text-align: center;
+}
+
+.mod_info{
+	margin: 1em 0;
+}
+
+.mod_info h2{
+	font-size: 18px;
+}
+
+.mod_info h3{
+	font-size: 15px;
+}
+
+#graph_canvas{
+	border-radius: 10px;
+	border: solid 0.5em #000;
+}
