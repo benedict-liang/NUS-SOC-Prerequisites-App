@@ -16,7 +16,7 @@
  
 <div class="header_strip">
 	<a href="<?php echo base_url().'module_pages/index' ?>">
-		<button class="btn btn-inverse home_button">Main Page</button>
+		<button class="btn btn-inverse home_button">Modules Prerequisites Home</button>
 	</a>
 
 </div>
@@ -33,11 +33,14 @@
 	<div class="row">
 		<div class="span12 guide_title">
 			<h1>Guide</h1>
-			<h3>Arrows with the same color represent an or between the corresponding prerequisites.
-				<br/>
-				Modules away from the arrow head, corresponds to the prerequisites of the module at the 
-				arrow head.
-			</h3>
+			<h3>Modules away from the arrow head, corresponds to the prerequisites of the module at the 
+				arrow head.</h3>
+			<h4>Example: A ---> B implies Module A is a prerequisite of module B</h4>
+			<br/>
+			<h3>Arrows with the same color represent an &ldquo;or&rdquo; between the corresponding prerequisites.</h3>
+			<br/>	
+			<h3>Extra: You can drag the bubbles in the graph around!</h3>
+				
 		</div>
 	</div>
 
