@@ -3,6 +3,7 @@ NUS-SOC-Prerequisites-App
 
 Visual Implementation of the Prerequisites Tree for NUS School of Computing Modules
 
+You can view the live site at: http://54.251.62.231/module_pages/index
 
 Setup Steps
 ===========
